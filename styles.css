@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.item1 {
+  grid-area: titel;
+  width: 100%;
+}
+  
+.item2 {
+  grid-area: afbeelding;
+  box-shadow: none;
+}
+
+.item3 {
+  grid-area: knop1;
+  background-image: url("./images/logo-scapino.jpg");
+  background-color: #ec0826;
+  box-shadow: 13px 5px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 10rem;
+}
+
+.item4 {
+  grid-area: knop2;
+  background-image: url("./images/logo-scapino.jpg");
+  background-color: #ec0826;
+  box-shadow: 13px 5px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 10rem;
+}
+
+.item5 {
+  grid-area: knop3;
+  background-image: url("./images/logo-sneakerking.jpg");
+  background-color: white;
+  box-shadow: 13px 5px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 10rem;
+  }
+
+.item6 { 
+  grid-area: knop4;
+  background-image: url("./images/logo-scapino.jpg");
+  background-color: #ec0826;
+  box-shadow: 13px 5px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 10rem;
+  }
+  
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'titel titel titel titel'
+    '. afbeelding afbeelding .'
+    '. knop1 knop2 .'
+    '. knop3 knop4 .';
+  gap: 30px;
+  padding: 30px;
+}
+
+.grid-container > div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+  width: 100%;
+  
+  text-align: center;
+  
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdf4ca;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  margin-top: 2vh;
+  background-color: #f6f6f6;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.knoppen {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  box-shadow: 13px 5px 4px rgba(0, 0, 0, 0.7);
+}
+
+.startknop {
+  text-shadow: 2px 2px 10px #ffd539;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  top: 25%;
+}
+
+.center {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+h3 {
+  
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 14rem;
+}
+
+.question {
+  /*font-weight: bold;*/
+  margin-left: 2vw;
+  margin-right: 2vw;
+  text-align: center;
+  font-size: 2.2em;
+/*  line-height: 2em; */
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options input[type="radio"]:checked+label {
+  background-color: #ffd539;
+}
+
+.options label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 80%;
+  border: 1px solid gray;
+  padding: 0.5em;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 5vh;
+  background-color: #f61d32;
+  color: #fff;
+  border: 10px solid #f61d32;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.5s;
+/*  margin-right: 10px;*/
+}
+
+.button:active {
+  border: 10px solid #ffd539;
+/*  background-color: #3071a9; */
+}
+
+.result {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.hide{
+  display: none;
+}
+
+ul{
+  display: inline-block;
+  text-align: left;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+[id*='uitleg'] {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  font-size: 1.2rem;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+#info p{ font-size: 1.1rem; }
+#info h3{ font-size: 1.5rem; }
+
+.score{ font-size: 3rem;}
+
+.punten{ color: green;}
+
+.goed{ color: green;}
+
+.fout{ color: red;}
+
+.nakijken{
+    padding: 1rem;
+    font-size: 2rem;
+}
